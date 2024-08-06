@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>FreeMC - 我的世界公益服务器</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+	<script src="https://cdn.bootcdn.net/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <!--<span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span> -->
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="active" aria-label="Toggle navigation">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about-us.html" aria-label="Toggle navigation">关于</a>
+                                    </li>
+                                    <li class="nav-item">
+										<a href="blog-grid.html" aria-label="Toggle navigation">公告</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="pricing.html" aria-label="Toggle navigation">支持我们</a>
+                                    </li>
+									<li class="nav-item">
+                                        <a href="signin.html" aria-label="Toggle navigation">登录</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+							<div class="button"> 
+								<a href="copy-success.html" class="btn" onclick="copyText()">即刻游戏</a> 
+							</div>
+							<input type="text" id="copyText" value="mc.freemc.top:26038" style="position: absolute; left: -9999px">
+    
+							<script>
+								function copyText() {
+									var copyText = document.getElementById("copyText");
+									copyText.select();
+									copyText.setSelectionRange(0, 99999); // For mobile devices
+            
+								try {
+									document.execCommand('copy');
+								} catch (err) {
+									console.error('复制失败:', err);
+								}
+							}
+							</script>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">捐赠选项</h1>
+                        <ul class="breadcrumb-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li>捐赠</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Pricing Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">请注意！除了特殊游戏标签外，您不能获得任何特权！</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">捐赠计划</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">支付请备注游戏ID，不备注则视为无偿捐赠！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                    <!-- Single Table -->
+                    <div class="single-table">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">基础</h4>
+                            <p class="sub-title">以下的有效期均为一月</p>
+                            <div class="price">
+                                <h2 class="amount"><span class="currency">¥</span>19<span class="duration">/月</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li>蓝色ID前缀</li>
+                                <li>登上赞助者名单</li>
+                                <li class="disable">永久拥有权</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                        <div class="button">
+                            <a href="assets/images/month.jpg" class="btn">去支付 <i
+                                    class="lni lni-arrow-right"></i></a>
+                        </div>
+                        <p class="no-card">没有优惠</p>
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+                    <!-- Single Table -->
+                    <div class="single-table middle">
+                        <span class="popular">最多支付</span>
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">升级</h4>
+                            <p class="sub-title">以下有效期均为一年</p>
+                            <div class="price">
+                                <h2 class="amount"><span class="currency">¥</span>199<span class="duration">/年</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li>绿色ID前缀</li>
+                                <li>登上赞助者名单</li>
+                                <li class="disable">永久拥有权</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                        <div class="button">
+                            <a href="assets/images/year.jpg" class="btn btn-alt">去支付<i
+                                    class="lni lni-arrow-right"></i></a>
+                        </div>
+                        <p class="no-card">没有优惠</p>
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+                    <!-- Single Table -->
+                    <div class="single-table">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">顶级</h4>
+                            <p class="sub-title">以下均为永久权限</p>
+                            <div class="price">
+                                <h2 class="amount"><span class="currency">¥</span>599<span class="duration">/month</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li>红色ID前缀</li>
+                                <li>登上赞助者名单</li>
+                                <li>永久拥有权</li>
+                            </ul>
+                            <!-- End Table List -->
+                        </div>
+                        <!-- End Table Content -->
+                        <div class="button">
+                            <a href="assets/images/forever.jpg" class="btn">去支付 <i
+                                    class="lni lni-arrow-right"></i></a>
+                        </div>
+                        <p class="no-card">没有优惠</p>
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+				<p>支付成功后，工作人员将会在1-2日内受理订单，如长时间未发放请联系邮箱10000@newworldmc.cn。</p>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer section">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-about">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/logo.png" alt="#">
+                                    </a>
+                                </div>
+                                <p>致力打造一个纯净友善的游戏社区！（虽然服务器是无规则的Qwq，不守规矩会被服内大佬教训哦~）</p>
+                                <h4 class="social-title">在社交平台上关注我们:</h4>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>开发人员名单</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">断了一只爪子的招财猫</a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>捐赠者名单</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">空</a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer newsletter">
+                                <h3>反馈</h3>
+                                <p>向我们发送邮件，反馈您遇到的问题！</p>
+                                <form action="#" method="get" target="_blank" class="newsletter-form">
+                                    <input name="EMAIL" placeholder="10000@newworldmc.cn" required="required" type="email">
+                                    <div class="button">
+                                        <button class="sub-btn"><i class="lni lni-envelope"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Start Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-text">© 2023 - 2024 FreeMC. - All Rights Reserved. 断了一只爪子的招财猫提供技术支持.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
