@@ -1,21 +1,426 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>我的简单网页</title>  
-</head>  
-<body>  
-  
-    <h1>欢迎来到我的网站</h1>  
-    <p>这是一个简单的HTML页面示例。</p>  
-    <p>这里有一些文本，你可以自由修改以展示你的内容。</p>  
-  
-    <h2>一些有用的链接</h2>  
-    <ul>  
-        <li><a href="https://www.google.com">访问Google</a></li>  
-        <li><a href="https://www.wikipedia.org">访问Wikipedia</a></li>  
-    </ul>  
-  
-</body>  
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>FreeMC - 我的世界公益服务器</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+	<script src="https://cdn.bootcdn.net/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <!--<span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span> -->
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="active" aria-label="Toggle navigation">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about-us.html" aria-label="Toggle navigation">关于</a>
+                                    </li>
+                                    <li class="nav-item">
+										<a href="blog-grid.html" aria-label="Toggle navigation">公告</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">支持我们</a>
+                                    </li>
+									<li class="nav-item">
+                                        <a href="signin.html" aria-label="Toggle navigation">登录</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+							<div class="button"> 
+								<a href="copy-success.html" class="btn" onclick="copyText()">即刻游戏</a> 
+							</div>
+							<input type="text" id="copyText" value="mc.freemc.top:26038" style="position: absolute; left: -9999px">
+    
+							<script>
+								function copyText() {
+									var copyText = document.getElementById("copyText");
+									copyText.select();
+									copyText.setSelectionRange(0, 99999); // For mobile devices
+            
+								try {
+									document.execCommand('copy');
+								} catch (err) {
+									console.error('复制失败:', err);
+								}
+							}
+							</script>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h4 class="wow fadeInUp" data-wow-delay=".2s">欢迎访问www.freemc.top，想要在FreeMC上进行游戏？</h4>
+                        <h1 class="wow fadeInUp" data-wow-delay=".4s">启动MC并添加服务器地址：mc.freemc.top:26038</h1>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">您需要拥有一个Minecraft：Java版正版账号才能在FreeMC上进行游戏！（还未拥有正版账号吗？下方可以直达Minecraft官网哦~）
+                        </p>
+                        <div class="button wow fadeInUp" data-wow-delay=".8s">
+                            <a href="https://minecraft.net/" class="btn ">购买正版</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="hero-image">
+                        <img class="main-image" src="assets/images/hero/4c0748e0cc5ddbebe69ab3ca88752c47.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+
+
+    <!-- Start Faq Area -->
+    <section class="faq section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">FAQ</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">常见问题</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">这里有一些问题的答案~</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <span class="title">服务器会跑路吗？</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>不会。FreeMC的前身是YixingPixel，由NewWorld, Huiteli两大服务器组合而成，自2023年6月28日开服至今。由于版本升级旧存档不再兼容高版本，因此更换存档，老存档可联系服务器工作人员获取。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <span class="title">我该如何联系工作人员？</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>可联系邮箱：10000@newworldmc.cn；QQ：2486089970；微信：13771353920；或在QQ玩家群内联系群主。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="title">我该如何与服务器内的其他玩家沟通？</span><i
+                                        class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>欢迎加入我们的QQ玩家交流群，群号：884036851；请注意，群内发言请遵守群内相关规定。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 xs-margin">
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading11">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <span class="title">我可以充值获取特权吗？</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>非常抱歉，FreeMC是一个纯公益的服务器，如果您想支持我们请点击网页顶部导航栏的“支持我们”按钮。请注意！我们不会因为您的赞助而提供特权！但您可以在服务器内获得前缀***和后缀***。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading22">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                    <span class="title">If I am a foreigner, how should I interact with other players?</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>You can join our Discord server! Here is the link: https://discord.gg/9qEjV5sgpv Wishing you a pleasant gaming experience~</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading33">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                                    <span class="title">在服务器内需要遵守什么规则呢？</span><i class="lni lni-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>FreeMC是一个自由的服务器，加入服务器即代表您同意《FreeMC玩家守则》。摘要：在服务器内您可以自由创造，但不可以建造有关色情/政治的建筑，如果您违反了《FreeMC玩家守则》，那么您将会收到永久的封禁处罚。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Faq Area -->
+    <!-- Start Footer Area -->
+    <footer class="footer section">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-about">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/logo.png" alt="#">
+                                    </a>
+                                </div>
+                                <p>致力打造一个纯净友善的游戏社区！（虽然服务器是无规则的Qwq，不守规矩会被服内大佬教训哦~）</p>
+                                <h4 class="social-title">在社交平台上关注我们:</h4>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>友情链接</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">Marketing</a></li>
+                                    <li><a href="javascript:void(0)">Analytics</a></li>
+                                    <li><a href="javascript:void(0)">Commerce</a></li>
+                                    <li><a href="javascript:void(0)">Insights</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>支持</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">Pricing</a></li>
+                                    <li><a href="javascript:void(0)">Documentation</a></li>
+                                    <li><a href="javascript:void(0)">Guides</a></li>
+                                    <li><a href="javascript:void(0)">API Status</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer newsletter">
+                                <h3>反馈</h3>
+                                <p>向我们发送邮件，反馈您遇到的问题！</p>
+                                <form action="#" method="get" target="_blank" class="newsletter-form">
+                                    <input name="EMAIL" placeholder="10000@newworldmc.cn" required="required" type="email">
+                                    <div class="button">
+                                        <button class="sub-btn"><i class="lni lni-envelope"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Start Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-text">© 2023 FreeMC. - All Rights Reserved. 断了一只爪子的招财猫提供技术支持.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 2,
+                },
+                1170: {
+                    items: 3,
+                }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+        //========= glightbox
+        GLightbox({
+            'href': '#',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+
+    </script>
+</body>
+
 </html>
