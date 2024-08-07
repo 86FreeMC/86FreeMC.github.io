@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<url  url="https://freemc.top/" incount="1" outcount="9" title="FreeM...">
+  <url  url="https://freemc.top/index.html" incount="24" outcount="9" title="FreeM...">
+  </url>
+  <url  url="https://freemc.top/404.html" incount="4" outcount="1" title="FreeM...">
+  </url>
+  <url  url="https://freemc.top/pricing.html" incount="6" outcount="9" title="FreeM...">
+    <url  url="https://freemc.top/about-us.html" incount="4" outcount="0" title="">
+    </url>
+    <url  url="https://freemc.top/blog-grid.html" incount="4" outcount="0" title="">
+    </url>
+  </url>
+  <url  url="https://freemc.top/signin.html" incount="8" outcount="11" title="FreeM...">
+    <url  url="https://freemc.top/reset-password.html" incount="1" outcount="10" title="FreeM...">
+    </url>
+    <url  url="https://freemc.top/signup.html" incount="1" outcount="10" title="FreeM...">
+    </url>
+  </url>
+  <url  url="https://freemc.top/copy-success.html" incount="6" outcount="2" title="复制成功 ...">
+  </url>
+  <url  url="https://freemc.top/rules.txt" incount="3" outcount="0" title="">
+  </url>
+</url>

@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>FreeMC - 我的世界公益服务器</title>
-    <meta name="description" content="" />
+    <meta name="description" content="FreeMC 是一个免费的 Minecraft 公益服务器。加入我们，享受纯净的游戏体验。官方qq群号884036851" />
+    <meta name="keywords" content="Minecraft, 我的世界, 公益服务器, 免费服务器, FreeMC, MC, 正版服务器, 纯净生存服务器, 无规则服务器" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
-	<script src="https://cdn.bootcdn.net/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
@@ -17,7 +18,19 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Structured Data in JSON-LD format -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "FreeMC - 免费的 Minecraft 公益服务器",
+      "url": "https://www.freemc.top",
+      "description": "FreeMC 是一个免费的 Minecraft 公益服务器。加入我们，享受纯净的游戏体验。官方qq群号884036851"
+    }
+    </script>
 </head>
+
 
 <body>
     <!--[if lte IE 9]>
@@ -48,14 +61,14 @@
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo/logo.png" alt="Logo">
+                                <img src="assets/images/logo/logo.png" alt="FreeMC Minecraft 公益服务器 Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
+                                <!--<span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span> -->
                             </button>
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
@@ -63,10 +76,10 @@
                                         <a href="index.html" class="active" aria-label="Toggle navigation">首页</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="404.html" aria-label="Toggle navigation">关于</a>
+                                        <a href="about-us.html" aria-label="Toggle navigation">关于</a>
                                     </li>
                                     <li class="nav-item">
-										<a href="404.html" aria-label="Toggle navigation">公告</a>
+										<a href="blog-grid.html" aria-label="Toggle navigation">公告</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="pricing.html" aria-label="Toggle navigation">支持我们</a>
@@ -204,7 +217,7 @@
                             <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>非常抱歉，FreeMC是一个纯公益的服务器，如果您想支持我们请点击网页顶部导航栏的“支持我们”按钮。请注意！我们不会因为您的赞助而提供特权！但您可以在服务器内获得特定颜色的游戏ID。</p>
+                                    <p>非常抱歉，FreeMC是一个纯公益的服务器，如果您想支持我们请点击网页顶部导航栏的“支持我们”按钮。请注意！我们不会因为您的赞助而提供特权！但您可以在服务器内获得前缀***和后缀***。</p>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +267,7 @@
                             <div class="single-footer f-about">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="assets/images/logo/logo.png" alt="#">
+                                        <img src="assets/images/logo/logo.png" alt="FreeMC Minecraft 公益服务器 Logo">
                                     </a>
                                 </div>
                                 <p>致力打造一个纯净友善的游戏社区！（虽然服务器是无规则的Qwq，不守规矩会被服内大佬教训哦~）</p>
@@ -286,7 +299,7 @@
                         <div class="col-lg-2 col-md-6 col-12">
                             <!-- Single Widget -->
                             <div class="single-footer f-link">
-                                <h3>赞助名单</h3>
+                                <h3>捐赠者名单</h3>
                                 <ul>
                                     <li><a href="javascript:void(0)">空</a></li>
                                     <li><a href="javascript:void(0)"></a></li>
@@ -323,9 +336,6 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <p class="copyright-text">© 2023 - 2024 FreeMC. - All Rights Reserved. 断了一只爪子的招财猫提供技术支持.</p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <p class="copyright-owner"><a target="_blank" href="rules.txt" title="隐私政策&服务条款">隐私政策&服务条款</a>
                         </div>
                     </div>
                 </div>

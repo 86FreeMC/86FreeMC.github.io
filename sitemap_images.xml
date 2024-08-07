@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 9 Generated at: 2024-08-07 16:58:23 -->
+
+  <url>
+    <loc>https://freemc.top/</loc>
+    <priority>1.00</priority>
+<image:image>
+<image:loc>https://freemc.top/assets/images/logo/logo.png</image:loc>
+<image:caption>Logo</image:caption>
+</image:image>
+<image:image>
+<image:loc>https://freemc.top/assets/images/hero/4c0748e0cc5ddbebe69ab3ca88752c47.png</image:loc>
+<image:caption>#</image:caption>
+</image:image>
+  </url>
+
+  <url>
+    <loc>https://freemc.top/signin.html</loc>
+    <priority>1.00</priority>
+<image:image>
+<image:loc>https://freemc.top/assets/images/account-login/google.png</image:loc>
+<image:caption>#</image:caption>
+</image:image>
+  </url>
+
+</urlset>

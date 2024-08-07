@@ -1,0 +1,88 @@
+var site_tree_node = {
+  "url": "https://freemc.top/",
+  "incount": "1",
+  "outcount": "9",
+  "title": "FreeM...",
+  "childs": [
+  {
+    "url": "https://freemc.top/index.html",
+    "incount": "24",
+    "outcount": "9",
+    "title": "FreeM...",
+    "childs": [
+        ]
+  }
+  ,{
+    "url": "https://freemc.top/404.html",
+    "incount": "4",
+    "outcount": "1",
+    "title": "FreeM...",
+    "childs": [
+        ]
+  }
+  ,{
+    "url": "https://freemc.top/pricing.html",
+    "incount": "6",
+    "outcount": "9",
+    "title": "FreeM...",
+    "childs": [
+    {
+      "url": "https://freemc.top/about-us.html",
+      "incount": "4",
+      "outcount": "0",
+      "title": "null",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://freemc.top/blog-grid.html",
+      "incount": "4",
+      "outcount": "0",
+      "title": "null",
+      "childs": [
+            ]
+    }
+    ]
+  }
+  ,{
+    "url": "https://freemc.top/signin.html",
+    "incount": "8",
+    "outcount": "11",
+    "title": "FreeM...",
+    "childs": [
+    {
+      "url": "https://freemc.top/reset-password.html",
+      "incount": "1",
+      "outcount": "10",
+      "title": "FreeM...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://freemc.top/signup.html",
+      "incount": "1",
+      "outcount": "10",
+      "title": "FreeM...",
+      "childs": [
+            ]
+    }
+    ]
+  }
+  ,{
+    "url": "https://freemc.top/copy-success.html",
+    "incount": "6",
+    "outcount": "2",
+    "title": "复制成功 ...",
+    "childs": [
+        ]
+  }
+  ,{
+    "url": "https://freemc.top/rules.txt",
+    "incount": "3",
+    "outcount": "0",
+    "title": "null",
+    "childs": [
+        ]
+  }
+  ]
+}
