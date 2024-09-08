@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>FreeMC - 公告</title>
+    <meta name="description" content="FreeMC 是一个免费的 Minecraft 公益服务器。加入我们，享受纯净的游戏体验。官方qq群号884036851" />
+    <meta name="keywords" content="Minecraft, 我的世界, 公益服务器, 免费服务器, FreeMC, MC, 正版服务器, 纯净生存服务器, 无规则服务器" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="baidu-site-verification" content="codeva-MKFLrVAiTe" />
+	<meta name="google-site-verification" content="Enq9mEm-33w3pe4DmDeHQwFHdmI3JMQymdXavx1c-bM" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Structured Data in JSON-LD format -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "FreeMC - 免费的 Minecraft 公益服务器",
+      "url": "https://www.freemc.top",
+      "description": "FreeMC 是一个免费的 Minecraft 公益服务器。加入我们，享受纯净的游戏体验。官方qq群号884036851"
+    }
+    </script>
+</head>
+
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+	
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+			<div>
+				<p>正在加载页面</p>
+				<p>如果页面长时间未加载成功</p>
+				<p>请联系QQ 2486089970</p>
+			</div>
+        </div>
+    </div>
+	
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="FreeMC Minecraft 公益服务器 Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="active" aria-label="Toggle navigation">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="banlist.html" aria-label="Toggle navigation">封禁列表</a>
+                                    </li>
+                                    <li class="nav-item">
+										<a href="blog-grid.html" aria-label="Toggle navigation">公告</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="pricing.html" aria-label="Toggle navigation">Rank</a>
+                                    </li>
+									<li class="nav-item">
+                                        <a href="signin.html" aria-label="Toggle navigation">登录</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+							<div class="button"> 
+								<a href="copy-success.html" class="btn" onclick="copyText()">即刻游戏</a> 
+							</div>
+							<input type="text" id="copyText" value="mc.freemc.top:26038" style="position: absolute; left: -9999px">
+    
+							<script>
+								function copyText() {
+									var copyText = document.getElementById("copyText");
+									copyText.select();
+									copyText.setSelectionRange(0, 99999); // For mobile devices
+            
+								try {
+									document.execCommand('copy');
+								} catch (err) {
+									console.error('复制失败:', err);
+								}
+							}
+							</script>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">公告列表</h1>
+                        <ul class="breadcrumb-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li>公告列表</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Blog Grid Area -->
+    <section class="section blog-grid-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <!-- Start Single Blog Grid -->
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-2024-07-02.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 2024 07 02
+                                            
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> 断了一只爪子的招财猫
+                                            
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="blog-2024-07-02.html">FreeMC官方站点正式上线！</a>
+                                    </h4>
+                                    <p>欢迎访问www.freemc.top --- FreeMC官方站点。这里不仅会介绍FreeMC服务器中的最新活动以及有趣玩法，更会第一时间推出对Minecraft游戏新版本的介绍！</p>
+                                    <div class="button">
+                                        <a href="blog-2024-07-02.html" class="btn">阅读更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+						                            <!-- Start Single Blog -->
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-2024-09-08.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 2024 09 08
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> 断了一只爪子的招财猫
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="https://www.bilibili.com/video/BV1ispBeSEBv/?vd_source=70cedb85b92d0d7503c711aa7a0e050b">准备好迎接《Minecraft：大电影》了吗！</a>
+                                    </h4>
+                                    <p>激动人心的消息——经典电子游戏改编真人电影，《Minecraft：大电影》即将登上大荧幕！观看官方宣传片并了解更多关于这一备受瞩目的电影的信息。（国内用户请选择b站播放源）</p>
+                                    <div class="button">
+										<a href="https://www.bilibili.com/video/BV1ispBeSEBv/?vd_source=70cedb85b92d0d7503c711aa7a0e050b" class="btn">Bilibili</a>
+                                        <a href="https://www.minecraft.net/zh-hans/minecraft-movie" class="btn">minecraft.net</a>
+										<a href="https://www.youtube.com/watch?v=PE2YZhcC4NY" class="btn">Youtube</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <!-- Start Single Blog -->
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-JE.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 2024 09 08
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> 断了一只爪子的招财猫
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%881.21?variant=zh">【JE】我的世界1.21新版本更新了啥？</a>
+                                    </h4>
+                                    <p>1.21是棘巧试炼的首个正式版，也是Java版的一次主要更新，发布于2024年6月13日。此次更新在Minecraft Live 2023期间宣布，主题名称于2024年4月26日的Minecraft Monthly上公布。</p>
+                                    <div class="button">
+                                        <a href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%881.21?variant=zh" class="btn">阅读更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <!-- Start Single Blog Grid -->
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-BE.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 2024 09 08
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> 断了一只爪子的招财猫
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%881.21.0?variant=zh">【BE】我的世界1.21新版本更新了啥？</a>
+                                    </h4>
+                                    <p>1.21.0是基岩版已发布Minecraft Live 2023期间宣布，主题名称尚未确定。在此次更新的首个测试版发布前，其部分特性从1.20.50.21开始在实验性玩法中开发。</p>
+                                    <div class="button">
+                                        <a href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%881.21.0?variant=zh" class="btn">阅读更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <!-- Start Single Blog Grid -->
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-2024-08-31.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 2024 08 31
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> 断了一只爪子的招财猫
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="pricing.html">【活动】FreeMC Rank开学季大降价！</a>
+                                    </h4>
+                                    <p>FreeMC服务器 Rank价格在2024 08 31 日晚完成了降价调整，各Rank价格均有所下调（MVP Rank 不参与此次开学季活动）各位小伙伴们要抓紧时间啦！活动持续时间不确定 手慢无！！！</p>
+                                    <div class="button">
+                                        <a href="pricing.html" class="btn">前往购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+
+
+                            <!-- Start Single Blog Grid 
+                            <div class="single-blog-grid">
+                                <div class="blog-img">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/blog/blog-3.png" alt="#">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="meta-info">
+                                        <a class="date" href="javascript:void(0)"><i class="lni lni-timer"></i> 25 Dec
+                                            2023
+                                        </a>
+                                        <a class="author" href="javascript:void(0)"><i class="lni lni-user"></i> Alex
+                                            Jendro
+                                        </a>
+                                    </div>
+                                    <h4>
+                                        <a href="blog-single.html">The Data-Driven Approach to Understanding.</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, adipscing elitr, sit gifted sed diam nonumy eirmod
+                                        tempor
+                                        ividunt dolore.</p>
+                                    <div class="button">
+                                        <a href="blog-single.html" class="btn">Read Blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Blog Grid -->
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="pagination left">
+                        <ul class="pagination-list">
+                            <li><a href="javascript:void(0)">上一页</a></li>
+                            <li class="active"><a href="javascript:void(0)">1</a></li>
+                            <li><a href="javascript:void(0)">下一页</a></li>
+                        </ul>
+                    </div>
+                    <!--/ End Pagination -->
+                </div>
+                <aside class="col-lg-4 col-md-12 col-12">
+                    <div class="sidebar">
+                        <!-- Start Single Widget -->
+                        <div class="widget search-widget">
+                            <h5 class="widget-title">搜索</h5>
+                            <form action="#">
+                                <input type="text" placeholder="在这里找你想要的吧！">
+                                <button type="submit"><i class="lni lni-search-alt"></i></button>
+                            </form>
+                        </div>
+                        <!-- End Single Widget -->
+                        <!-- Start Single Widget -->
+                        <div class="widget popular-feeds">
+                            <h5 class="widget-title">置顶公告</h5>
+                            <div class="popular-feed-loop">
+                                <div class="single-popular-feed">
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><a href="blog-single.html">FreeMC官方站点正式上线！</a></h6>
+                                        <span class="time"><i class="lni lni-calendar"></i> 2024 07 02</span>
+                                    </div>
+                                </div>
+                                <div class="single-popular-feed">
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><a href="blog-single.html"></a>准备好迎接《Minecraft：大电影》了吗！</h6>
+                                        <span class="time"><i class="lni lni-calendar"></i> 2024 09 08</span>
+                                    </div>
+                                </div>
+                                <div class="single-popular-feed">
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><a href="blog-single.html">【JE】我的世界1.21新版本更新了啥？</a></h6>
+                                        <span class="time"><i class="lni lni-calendar"></i> 2024 09 08</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                        <!-- Start Single Widget -->
+                        <div class="widget categories-widget">
+                            <h5 class="widget-title">类别</h5>
+                            <ul class="custom">
+                                <li>
+                                    <a href="javascript:void(0)">新闻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">红石</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">建筑</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">PVP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">特性</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                        <!-- Start Single Widget -->
+                        <div class="widget popular-tag-widget">
+                            <h5 class="widget-title">流行的标签</h5>
+                            <div class="tags">
+                                <a href="javascript:void(0)">创造</a>
+                                <a href="javascript:void(0)">建筑</a>
+                                <a href="javascript:void(0)">生存</a>
+                                <a href="javascript:void(0)">特性</a>
+                                <a href="javascript:void(0)">战斗</a>
+                                <a href="javascript:void(0)">红石科技</a>
+                                <a href="javascript:void(0)">最受欢迎</a>
+                                <a href="javascript:void(0)">Rank</a>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Grid Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer section">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-about">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/logo.png" alt="#">
+                                    </a>
+                                </div>
+                                <p>我们致力于打造一个纯净友善的游戏社区！</p>
+                                <h4 class="social-title">在社交平台上关注我们:</h4>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>开发人员名单</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">断了一只爪子的招财猫</a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>捐赠者名单</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">邹耀文</a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                    <li><a href="javascript:void(0)"></a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer newsletter">
+                                <h3>反馈</h3>
+                                <p>向我们发送邮件，反馈您遇到的问题！</p>
+                                <form action="#" method="get" target="_blank" class="newsletter-form">
+                                    <input name="EMAIL" placeholder="report@freemc.top" required="required" type="email">
+                                    <div class="button">
+                                        <button class="sub-btn"><i class="lni lni-envelope"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Start Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-text">© 2023 - 2024 FreeMC. - All Rights Reserved. 断了一只爪子的招财猫提供技术支持.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="copyright-owner"><a target="_blank" href="ppts.html" title="ppts">隐私政策/服务条款</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
