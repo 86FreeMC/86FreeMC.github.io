@@ -22,9 +22,9 @@ function animateUptime(uptimeBar, targetUptime) {
         uptimeBar.style.width = currentUptime + "%";
 
         // 根据当前的 uptime 数值设置颜色
-        if (currentUptime < 30) {
+        if (currentUptime < 40) {
             uptimeBar.style.backgroundColor = 'red';
-        } else if (currentUptime < 60) {
+        } else if (currentUptime < 70) {
             uptimeBar.style.backgroundColor = 'yellow';
         } else {
             uptimeBar.style.backgroundColor = 'green';
@@ -38,9 +38,9 @@ function animateUptime(uptimeBar, targetUptime) {
 
 // 根据 uptime 数值返回状态文本
 function getStatusText(uptime) {
-    if (uptime >= 60) {
+    if (uptime >= 70) {
         return "空闲";
-    } else if (uptime >= 30) {
+    } else if (uptime >= 40) {
         return "繁忙";
     } else {
         return "阻塞";
