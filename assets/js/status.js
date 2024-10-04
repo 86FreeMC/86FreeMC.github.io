@@ -23,17 +23,17 @@ function animateUptime(uptimeBar, targetUptime) {
 
         // 根据当前的 uptime 数值设置颜色
         if (currentUptime < 40) {
-            uptimeBar.style.backgroundColor = 'red';
+            uptimeBar.style.backgroundColor = 'red'; // 阻塞状态
         } else if (currentUptime < 70) {
-            uptimeBar.style.backgroundColor = 'yellow';
+            uptimeBar.style.backgroundColor = 'yellow'; // 繁忙状态
         } else {
-            uptimeBar.style.backgroundColor = 'green';
+            uptimeBar.style.backgroundColor = 'green'; // 空闲状态
         }
 
         // 更新文本显示 (数值 + 状态)
         let percentageText = uptimeBar.parentElement.parentElement.querySelector('.status-percentage');
         percentageText.textContent = currentUptime.toFixed(2) + "% " + getStatusText(currentUptime);
-    }, 20);  // 每20毫秒更新一次
+    }, 50);  // 每20毫秒更新一次
 }
 
 // 根据 uptime 数值返回状态文本
@@ -62,6 +62,9 @@ function updateUptime() {
         animateUptime(uptimeBar, targetUptime);
     });
 }
+
+// 每隔10秒随机更新一次 uptime，并从0开始
+setInterval(updateUptime, 60000);
 
 // 初始调用一次，确保页面加载时有初始值
 updateUptime();
