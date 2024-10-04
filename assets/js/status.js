@@ -27,7 +27,7 @@ function animateUptime(uptimeBar, targetUptime) {
         } else if (currentUptime < 60) {
             uptimeBar.style.backgroundColor = 'yellow';
         } else {
-            uptimeBar.style.backgroundColor = '#2d8b45';
+            uptimeBar.style.backgroundColor = 'green';
         }
 
         // 更新文本显示 (数值 + 状态)
